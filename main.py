@@ -2,7 +2,7 @@ import discord
 import rename
 import img_cmd
 import re
-
+import dont_touch
 client = discord.Client()
 
 @client.event
@@ -19,4 +19,4 @@ async def on_message(message):
     elif len(re.findall("현[^현구]*구", message.content)) != 0:
         await rename.rename(message)
 
-client.run("NjYyMjM1NzQyMjYwNTU5ODcz.XwMr3w.eW6jGlgXm1nAoQkcGvR-zhvUbPo")
+client.run(dont_touch.token)
