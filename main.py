@@ -15,7 +15,9 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith("!정훈티콘"):
-        await img_cmd.img_cmd(message)
+        await img_cmd.JH_emoticon(message)
+    elif message.content.startswith("!재원티콘"):
+        await img_cmd.JW_emoticon(message)
     elif len(re.findall("현[^현구]*구", message.content)) != 0:
         await rename.rename(message)
 

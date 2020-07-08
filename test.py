@@ -1,7 +1,7 @@
 import discord
 from PIL import Image, ImageDraw, ImageFont
 
-target_img = Image.open('images/image.png')
+target_img = Image.open('images/JH_img.png')
 selectedFont = ImageFont.truetype('fonts/gulim.ttc', 24)
 draw = ImageDraw.Draw(target_img)
 y = 60
